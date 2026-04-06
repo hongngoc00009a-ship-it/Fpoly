@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FPT Polytechnic - Xây Dựng Trang Web & Hoạt Động Sinh Viên</title>
+    <meta name="description" content="Trang web giới thiệu về môn học xây dựng trang web, thông tin tuyển sinh 2026 và hoạt động học tập nhóm tại FPT Polytechnic.">
+    
+    <style>
+        body {
+            background-color: white !important;
+            color: black !important;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 40px;
+            line-height: 1.6;
+        }
+
+        .logo-fpt {
+            max-width: 280px;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        hr {
+            border: 0;
+            border-top: 1px solid #ddd;
+            margin: 15px 0;
+        }
+
+        h1 {
+            font-size: 28px;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin: 25px 0;
+            text-align: center;
+        }
+
+        /* Bố cục Float Left chuẩn ảnh mẫu */
+        .content-box {
+            overflow: auto;
+            margin-bottom: 50px;
+        }
+
+        .img-left {
+            float: left;
+            margin-right: 25px;
+            margin-bottom: 15px;
+            width: 200px; /* Cân đối theo ảnh mẫu */
+            border-radius: 8px;
+            transition: 0.4s ease;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        /* Hiệu ứng chạm nháy cam khi hover */
+        .img-left:hover {
+            filter: drop-shadow(0 0 10px #f05a28);
+            transform: scale(1.05);
+        }
+
+        .text-content {
+            font-size: 16px;
+            text-align: justify;
+        }
+
+        /* Định dạng tiêu đề phân cấp SEO (Không chứa chữ Heading thừa) */
+        h2 { color: #0056b3; font-size: 22px; margin: 0 0 12px 0; }
+        h3 { color: #f05a28; font-size: 19px; margin: 15px 0 8px 0; }
+        h4 { color: #444; font-size: 17px; font-style: italic; margin-top: 10px; }
+        
+        .keyword { font-weight: bold; transition: 0.3s; }
+        .keyword:hover { color: #f05a28; cursor: pointer; }
+
+        /* FOOTER 3 CỘT NẰM NGANG */
+        footer {
+            background-color: #1a1a1a;
+            color: #ffffff !important;
+            padding: 40px 20px;
+            margin-top: 60px;
+            border-top: 4px solid #f05a28;
+            border-radius: 5px;
+        }
+
+        .footer-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            max-width: 1100px;
+            margin: 0 auto;
+            gap: 30px;
+        }
+
+        .footer-column {
+            flex: 1;
+            min-width: 250px;
+        }
+
+        .footer-column h4 {
+            color: #f05a28;
+            font-size: 17px;
+            text-transform: uppercase;
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+
+        .footer-column p {
+            font-size: 14px;
+            margin: 8px 0;
+            color: #ccc;
+        }
+
+        footer a { color: #f05a28; text-decoration: none; }
+        footer a:hover { text-decoration: underline; }
+
+        .footer-bottom {
+            text-align: center;
+            margin-top: 30px;
+            padding-top: 15px;
+            border-top: 1px solid #333;
+            font-size: 12px;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+
+    <img src="Logo.png" alt="Logo FPT Polytechnic" class="logo-fpt">
+    <hr>
+
+    <h1>Xây Dựng Trang Web & Hoạt Động Sinh Viên</h1>
+
+    <div class="content-box">
+        <img src="anhsv.jpg" alt="Sinh viên FPT Polytechnic" class="img-left">
+        <div class="text-content">
+            <h2>Chào mừng đến với môn học Xây dựng trang web</h2>
+            <p><span class="keyword">FPT Polytechnic</span> hân hạnh chào đón các bạn. Kết thúc môn học này bạn có thể tự xây dựng website tĩnh dựa trên kiến thức HTML & CSS chuẩn SEO.</p>
+            <p>Việc tối ưu cấu trúc trang giúp nội dung của bạn đạt <span class="keyword">độ search nhanh nhất</span> trên các nền tảng Google và Chrome.</p>
+        </div>
+    </div>
+
+    <div class="content-box">
+        <img src="tuyensinh.jpg" alt="Tuyển sinh FPT Polytechnic" class="img-left">
+        <div class="text-content">
+            <h2>Thông tin tuyển sinh năm 2026</h2>
+            <p>Nhà trường thông báo tuyển sinh các khối ngành Công nghệ thông tin và Thiết kế đồ họa với nhiều chính sách ưu đãi học phí hấp dẫn.</p>
+            <h3>Chương trình đào tạo chuẩn thực tế</h3>
+            <h4>Cam kết hỗ trợ việc làm cho sinh viên</h4>
+            <p>Với triết lý "Thực học - Thực nghiệp", sinh viên được rèn luyện kỹ năng thực tế để đáp ứng ngay nhu cầu của doanh nghiệp.</p>
+        </div>
+    </div>
+
+    <div class="content-box">
+        <img src="hocnhom.jpg" alt="Sinh viên học tập nhóm" class="img-left">
+        <div class="text-content">
+            <h2>Môi trường học tập nhóm sáng tạo</h2>
+            <p>Tại <span class="keyword">FPT Polytechnic</span>, học tập nhóm là hoạt động cốt lõi giúp sinh viên phát triển kỹ năng mềm và giải quyết vấn đề.</p>
+            <h3>Phát triển kỹ năng làm việc tập thể</h3>
+            <h4>Xây dựng các dự án thực tế cùng nhau</h4>
+            <p>Mỗi dự án là một cơ hội để các nhóm sinh viên cùng nhau sáng tạo, tối ưu hóa mã nguồn và hoàn thiện sản phẩm chuẩn SEO.</p>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <h4>Thông tin trường học</h4>
+                <p><strong>Trường Cao đẳng FPT Polytechnic Hà Nội</strong></p>
+                <p>Tòa nhà FPT Polytechnic, Phố Trịnh Văn Bô</p>
+            </div>
+
+            <div class="footer-column">
+                <h4>Vị trí đào tạo</h4>
+                <p>Quận Nam Từ Liêm, Hà Nội</p>
+                <p>Địa điểm: <strong>Cổng Con Ong</strong></p>
+            </div>
+
+            <div class="footer-column">
+                <h4>Liên hệ sinh viên</h4>
+                <p>Email: <a href="mailto:CĐFPTpoly123@gmail.com">CĐFPTpoly123@gmail.com</a></p>
+                <p>Hotline: <strong>0123456789</strong></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2026 Thiết kế bởi sv môn WEB107- FPT Polytechnic Hà Nội
+        </div>
+    </footer>
+
+</body>
+</html>
